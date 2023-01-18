@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Logo from "../assets/logo.png";
 import {BiMenu} from "react-icons/bi"
 import { Link } from "react-router-dom";
 import "../scss/Navbar.scss"
 
 
-const Navbar = () => {
+const Navbar = ({handleSidebar}) => {
   return (
     <div className="navbar">
       <div className="navbar_container">
@@ -14,7 +14,7 @@ const Navbar = () => {
             <img src={Logo} alt="company_logo" />
           </div>
           <div className="close_nav">
-            <BiMenu className="menu"/>
+            <BiMenu className="menu" onClick={()=>handleSidebar()}/>
           </div>
           <div className="nav_links">
             <nav className="links">
