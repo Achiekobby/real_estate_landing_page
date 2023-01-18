@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Logo from "../assets/logo.png";
 import {BiMenu} from "react-icons/bi"
 import { Link } from "react-router-dom";
