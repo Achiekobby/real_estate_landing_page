@@ -1,8 +1,9 @@
 import React from "react";
 import Logo from "../assets/logo.png";
-import { FaTimes } from "react-icons/fa";
+import {BiMenu} from "react-icons/bi"
 import { Link } from "react-router-dom";
 import "../scss/Navbar.scss"
+
 
 const Navbar = () => {
   return (
@@ -13,7 +14,7 @@ const Navbar = () => {
             <img src={Logo} alt="company_logo" />
           </div>
           <div className="close_nav">
-            <FaTimes className="close" />
+            <BiMenu className="menu"/>
           </div>
           <div className="nav_links">
             <nav className="links">
