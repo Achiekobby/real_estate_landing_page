@@ -17,7 +17,7 @@ const Benefits = () => {
           </div>
           <div className="content">
             <div className="topLine">
-              <h3>The benefits of UPVC</h3>
+              <h3>The benefits of PVC</h3>
             </div>
             <div className="headLine">
               <h2>Why uPVC?</h2>

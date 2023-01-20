@@ -45,42 +45,42 @@
         }
       }
 
-      .content{
+      .content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         padding: 30px;
 
-        .topLine{
+        .topLine {
           margin: 20px 0;
-          h3{
+          h3 {
             font-size: 0.95rem;
             font-weight: 700;
-            color: #1CE466;
+            color: #1ce466;
             text-transform: uppercase;
-            letter-spacing:0.05rem;
+            letter-spacing: 0.05rem;
           }
         }
-        .headLine{
+        .headLine {
           margin-bottom: 20px;
-          h2{
+          h2 {
             font-size: 2.5rem;
             color: #4cc9f0;
-            font-weight:700;
+            font-weight: 700;
           }
         }
-        .description{
-          p{
+        .description {
+          p {
             line-height: 2;
             font-size: 0.95rem;
             color: rgb(136, 136, 136);
             text-align: justify;
             font-weight: 500;
           }
-          .btn-secondary{
+          .btn-secondary {
             padding: 15px 30px;
-            background: #1CE466;
+            background: #1ce466;
             color: #fff;
             font-size: 0.85rem;
             font-weight: 500;
@@ -89,12 +89,32 @@
             border: none;
             transition: all 0.5s ease-in-out;
 
-            
-            &:hover{
-              transform:scale(1.05);
+            &:hover {
+              transform: scale(1.05);
             }
-
           }
+        }
+      }
+    }
+  }
+}
+
+//* media queries
+@media screen and (max-width: 980px) {
+  .benefits {
+    .benefits_container {
+      .benefits_wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px, auto));
+
+        .gallery{
+          grid-column: 1;
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          grid-template-rows: repeat(3, minmax(auto, 160px));
+          gap: 30px;
         }
       }
     }
