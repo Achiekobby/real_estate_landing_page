@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import "../scss/Home.scss"
 import Sidebar from '../components/Sidebar'
 import Benefits from '../components/Benefits'
+import Duties from '../components/Duties'
 
 const Home = () => {
   const [sidebar, setSidebar] = useState(false)
@@ -17,6 +18,7 @@ const Home = () => {
       <Sidebar sidebar = {sidebar} handleSidebar = {handleSidebar}/>
       <Header/>
       <Benefits/>
+      <Duties/>
     </div>
   )
 }
