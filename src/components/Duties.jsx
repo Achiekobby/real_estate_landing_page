@@ -1,8 +1,8 @@
-import React from 'react'
-import "../scss/Duties.scss"
-import DutiesBg from "../assets/glass_house.jpg"
-import {cardData} from "../Data/CardData"
-import Card from './Card'
+import React from "react";
+import "../scss/Duties.scss";
+import DutiesBg from "../assets/glass_house.jpg";
+import { cardData } from "../Data/CardData";
+import Card from "./Card";
 
 const Duties = () => {
   return (
@@ -12,15 +12,13 @@ const Duties = () => {
           <img src={DutiesBg} alt="glass_house" />
         </div>
         <div className="duties_wrapper">
-          {
-            cardData.map((duties, index)=>{
-              return (<Card index={index} {...duties}/>)
-            })
-          }
+          {cardData.map((duties, index) => {
+            return <Card index={index} {...duties} />;
+          })}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Duties
+export default Duties;
