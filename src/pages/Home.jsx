@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar'
 import Benefits from '../components/Benefits'
 import Duties from '../components/Duties'
 import Services from '../components/Services'
+import Statistics from '../components/Statistics'
 
 const Home = () => {
   const [sidebar, setSidebar] = useState(false)
@@ -21,6 +22,7 @@ const Home = () => {
       <Benefits/>
       <Duties/>
       <Services/>
+      <Statistics/>
     </div>
   )
 }
