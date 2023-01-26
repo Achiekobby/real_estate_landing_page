@@ -1,15 +1,15 @@
-import React from 'react'
-import "../scss/Services.scss"
+import React from "react";
+import "../scss/Services.scss";
 
 //* Images
-import ServiceImage from "../assets/glass_window3.jpg"
-import ServiceImage2 from "../assets/interior_design_two.jpg"
-import ServiceImage3 from "../assets/interior_design_three.jpg"
+import ServiceImage from "../assets/glass_window3.jpg";
+import ServiceImage2 from "../assets/interior_design_two.jpg";
+import ServiceImage3 from "../assets/interior_design_three.jpg";
 
 //* Icons
-import {BsBuilding} from 'react-icons/bs'
-import {FiSettings} from 'react-icons/fi'
-import {GiSaloonDoors} from 'react-icons/gi'
+import { BsBuilding } from "react-icons/bs";
+import { FiSettings } from "react-icons/fi";
+import { GiSaloonDoors } from "react-icons/gi";
 
 const Services = () => {
   return (
@@ -22,33 +22,41 @@ const Services = () => {
           <div className="heading">
             <h1>Our Main Services</h1>
           </div>
-          <div className="services_container">
-            <div className="service">
-              <img src={ServiceImage} alt="" />
-              <div className="service_desc">
-                <BsBuilding className="icons" />
-                <p>Window Services</p>
+          <div className="services_wrapper">
+            <div className="services_container">
+              <div className="service">
+                <img src={ServiceImage} alt="" />
+                <div className="desc">
+                  <div className="service_desc">
+                    <BsBuilding className="icons" />
+                    <p>Window Services</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="service">
-              <img src={ServiceImage2} alt="" />
-              <div className="service_desc">
-                <FiSettings className="icons" />
-                <p>Window Services</p>
+              <div className="service">
+                <img src={ServiceImage2} alt="" />
+                <div className="desc">
+                  <div className="service_desc">
+                    <FiSettings className="icons" />
+                    <p>Planning & Projects</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="service">
-              <img src={ServiceImage3} alt="" />
-              <div className="service_desc">
-                <GiSaloonDoors className="icons" />
-                <p>Window Services</p>
+              <div className="service">
+                <img src={ServiceImage3} alt="" />
+                <div className="desc">
+                  <div className="service_desc">
+                    <GiSaloonDoors className="icons" />
+                    <p>Doors Services</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
