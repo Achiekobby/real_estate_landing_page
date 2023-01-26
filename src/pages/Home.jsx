@@ -7,6 +7,7 @@ import Benefits from '../components/Benefits'
 import Duties from '../components/Duties'
 import Services from '../components/Services'
 import Statistics from '../components/Statistics'
+import Choose from '../components/Choose'
 
 const Home = () => {
   const [sidebar, setSidebar] = useState(false)
@@ -23,6 +24,7 @@ const Home = () => {
       <Duties/>
       <Services/>
       <Statistics/>
+      <Choose/>
     </div>
   )
 }
