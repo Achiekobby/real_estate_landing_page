@@ -29,6 +29,7 @@ const Choose = () => {
               {choose_us_data.map((data, index) => {
                 const { icon, title, desc } = data;
                 return (
+                  
                   <>
                     <div className="card">
                       <div className="icon">
