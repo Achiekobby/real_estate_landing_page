@@ -8,6 +8,7 @@ import Duties from '../components/Duties'
 import Services from '../components/Services'
 import Statistics from '../components/Statistics'
 import Choose from '../components/Choose'
+import Gallery from '../components/Gallery'
 
 const Home = () => {
   const [sidebar, setSidebar] = useState(false)
@@ -25,6 +26,7 @@ const Home = () => {
       <Services/>
       <Statistics/>
       <Choose/>
+      <Gallery/>
     </div>
   )
 }
