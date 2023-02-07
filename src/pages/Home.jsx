@@ -10,6 +10,7 @@ import Statistics from '../components/Statistics'
 import Choose from '../components/Choose'
 import Gallery from '../components/Gallery'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const Home = () => {
   const [sidebar, setSidebar] = useState(false)
@@ -29,6 +30,7 @@ const Home = () => {
       <Choose/>
       <Gallery/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }
