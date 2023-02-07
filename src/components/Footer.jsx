@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="copyright">
-          <p>Copyright &copy 2022 Future Windows and Doors Limited. All Rights Reserved</p>
+          <p>Copyright &copy;2022 Future Windows and Doors Limited. All Rights Reserved</p>
         </div>
         <div className="footer-bg">
           <img src={footerBg} alt="room-img" />
