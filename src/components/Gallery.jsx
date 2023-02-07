@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { galleryData } from "../Data/Gallery";
 import galleryBg from "../assets/bg2.jpg";
 import "../scss/Gallery.scss";
@@ -9,6 +9,7 @@ let new_categories = [
 ];
 
 const Gallery = () => {
+  const ref = useRef(null)
   const [categories, setCategories] = useState([]);
   const [gallery, setGallery] = useState(galleryData);
   const [isActive, setIsActive] = useState(false)
@@ -44,9 +45,9 @@ const Gallery = () => {
           <div className="filter_buttons">
             {categories.map((category) => {
               return (
-                <button
+                <button ref={ref}
                   onClick={() => handleFilter(category)}
-                  className={isActive ? 'btn-filter active' : 'btn-filter'}
+                  className="btn-filter"
                 >
                   {category}
                 </button>
