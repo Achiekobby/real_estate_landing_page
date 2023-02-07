@@ -9,6 +9,7 @@ import Services from '../components/Services'
 import Statistics from '../components/Statistics'
 import Choose from '../components/Choose'
 import Gallery from '../components/Gallery'
+import Contact from '../components/Contact'
 
 const Home = () => {
   const [sidebar, setSidebar] = useState(false)
@@ -27,6 +28,7 @@ const Home = () => {
       <Statistics/>
       <Choose/>
       <Gallery/>
+      <Contact/>
     </div>
   )
 }
